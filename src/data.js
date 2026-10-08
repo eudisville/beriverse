@@ -16,14 +16,54 @@ export const EXTRA = {
     whyTitle: "Pourquoi nous rejoindre",
     why: [["Impact réel", "Vos projets touchent des milliers d'apprenants et d'entreprises."], ["Apprendre en continu", "Accès à Beriverse Academy et à des formations internes."], ["Équipe ambitieuse", "Une culture d'innovation, d'entraide et de responsabilité."]],
     jobsTitle: "Nos offres", apply: "Postuler",
-    email: "carrieres@beriverse.fr", subject: "Candidature : ",
+    email: "hello@beriverse.fr", subject: "Candidature : ",
     jobs: [
-      { slug: "ingenieur-ia", title: "Ingénieur(e) IA", type: "CDI", place: "Abidjan", desc: "Concevoir et déployer des solutions d'IA et d'automatisation pour nos clients.",
-        missions: ["Analyser les besoins des clients et concevoir des solutions d'IA", "Développer, tester et déployer des modèles et des agents", "Documenter et former les équipes utilisatrices"],
-        profile: ["Bac+5 en informatique, data ou équivalent", "Maîtrise de Python et des outils d'IA", "Goût pour le travail en équipe et la pédagogie"] },
-      { slug: "formateur-developpement-web", title: "Formateur / Formatrice en développement web", type: "CDD", place: "Abidjan / En ligne", desc: "Animer des cours de code et accompagner les apprenants de Beriverse Academy.",
-        missions: ["Animer des sessions de formation en ligne et en présentiel", "Préparer les supports et les exercices pratiques", "Suivre la progression des apprenants"],
-        profile: ["Expérience en développement web (HTML, CSS, JavaScript, React)", "Capacité à expliquer simplement", "Première expérience de formation appréciée"] },
+      {
+        slug: "apporteur",
+        title: "Apporteur d’Affaires",
+        type: "Freelance",
+        place: "Abidjan, Côte d'Ivoire",
+        desc: "Identifiez des opportunités commerciales et mettez Beriverse en relation avec des entreprises ayant des besoins en formation et en technologie.",
+
+        missions: [
+          "Identifier des entreprises et décideurs susceptibles d’avoir besoin des services de Beriverse",
+          "Détecter et qualifier des opportunités commerciales dans son réseau",
+          "Mettre Beriverse en relation avec les prospects qualifiés",
+          "Faciliter la prise de contact et contribuer au suivi des opportunités",
+          "Développer et entretenir un réseau professionnel pertinent"
+        ],
+
+        profile: [
+          "Excellent réseau professionnel en Côte d’Ivoire",
+          "Aisance relationnelle et capacité à identifier des opportunités",
+          "Bonne compréhension des enjeux des entreprises",
+          "Autonomie, dynamisme et sens du business",
+          "Une expérience commerciale, B2B ou en développement d’affaires est un plus"
+        ]
+      },
+      {
+        slug: "consultant-formateur-analyse-donnees",
+        title: "Consultant Formateur / Formatrice en Analyse de Données",
+        type: "Freelance",
+        place: "Abidjan, Côte d'Ivoire",
+        desc: "Former les professionnels et les équipes à l’analyse, la visualisation et l’exploitation des données pour améliorer leur performance.",
+
+        missions: [
+          "Animer des sessions de formation en analyse de données en ligne et en présentiel",
+          "Concevoir des supports, exercices et cas pratiques adaptés aux besoins des apprenants",
+          "Former aux outils d’analyse et de visualisation tels qu’Excel et Power BI",
+          "Accompagner les apprenants dans la réalisation de projets et l’analyse de données réelles",
+          "Évaluer la progression des apprenants et proposer des axes d’amélioration"
+        ],
+
+        profile: [
+          "Expérience en analyse de données et maîtrise d’Excel et/ou Power BI",
+          "Bonne capacité à vulgariser les concepts liés aux données",
+          "Aisance dans l’animation de formations professionnelles",
+          "Esprit pédagogique et orientation pratique",
+          "Une expérience en entreprise ou en conseil est un plus"
+        ]
+      },
       { slug: "developpement-commercial", title: "Chargé(e) de développement commercial", type: "CDI", place: "Abidjan", desc: "Développer le portefeuille d'entreprises clientes et suivre les partenariats.",
         missions: ["Prospecter et présenter nos offres aux entreprises", "Négocier et suivre les contrats et partenariats", "Remonter les besoins du marché aux équipes produit"],
         profile: ["Bac+3 minimum, première expérience commerciale", "Aisance relationnelle et sens du résultat", "Intérêt pour la technologie et l'éducation"] },
@@ -47,11 +87,31 @@ export const EXTRA = {
     whyTitle: "Why join us",
     why: [["Real impact", "Your projects reach thousands of learners and companies."], ["Keep learning", "Access to Beriverse Academy and internal training."], ["Ambitious team", "A culture of innovation, mutual support and ownership."]],
     jobsTitle: "Open positions", apply: "Apply",
-    email: "carrieres@beriverse.fr", subject: "Application: ",
+    email: "hello@beriverse.fr", subject: "Application: ",
     jobs: [
-      { slug: "ingenieur-ia", title: "AI Engineer", type: "Full-time", place: "Abidjan", desc: "Design and deploy AI and automation solutions for our clients.",
-        missions: ["Analyze client needs and design AI solutions", "Build, test and deploy models and agents", "Document and train user teams"],
-        profile: ["Master's degree in computer science, data or equivalent", "Strong Python and AI tooling skills", "Team spirit and teaching mindset"] },
+      {
+        slug: "business-developer",
+        title: "Business Development Partner",
+        type: "Freelance",
+        place: "Abidjan",
+        desc: "Identify business opportunities and connect Beriverse with companies seeking training and technology solutions.",
+
+        missions: [
+          "Identify companies and decision-makers who may benefit from Beriverse's services",
+          "Identify and qualify business opportunities within your professional network",
+          "Connect Beriverse with qualified prospects",
+          "Facilitate initial contact and contribute to opportunity follow-up",
+          "Build and maintain a relevant professional network"
+        ],
+
+        profile: [
+          "Strong professional network in Côte d’Ivoire",
+          "Excellent interpersonal skills and ability to identify business opportunities",
+          "Good understanding of business challenges and needs",
+          "Autonomous, proactive, and business-oriented",
+          "Experience in sales, B2B, or business development is a plus"
+        ]
+      },
       { slug: "formateur-developpement-web", title: "Web Development Trainer", type: "Fixed-term", place: "Abidjan / Online", desc: "Teach coding courses and support Beriverse Academy learners.",
         missions: ["Lead online and in-person training sessions", "Prepare materials and hands-on exercises", "Track learner progress"],
         profile: ["Web development experience (HTML, CSS, JavaScript, React)", "Ability to explain things simply", "Prior training experience is a plus"] },
