@@ -1,0 +1,32 @@
+/* Pages Actualités & Carrières (réutilise les variables et classes de styles.css) */
+.page-head{background:var(#fff,#fff);padding:56px 0 48px}
+.page-head h1{font-size:60px;line-height:1.12;max-width:900px;margin-bottom:16px}
+.crumbs{display:flex;flex-wrap:wrap;font-size:15px;margin-bottom:22px}
+.crumbs a{font-weight:700;border-bottom:2px solid var(--orange,#ff7900)}
+.crumbs>*+*::before{content:"/";margin:0 10px;color:var(--mid,#666)}
+.article{max-width:820px;margin:0 auto}
+.article p{font-size:19px;line-height:1.65;margin-bottom:22px}
+.meta{display:block;color:var(--mid,#666);margin-bottom:18px}
+.art-hero{height:320px;margin-bottom:34px}
+.art-0{background:url(./assets/corance.jpg) center/cover}
+.art-1{background:url(./assets/open.jpg) center/cover}
+.art-2{background:url(./assets/hero.jpg) center/cover}
+.news-img.art-0,.news-img.art-1,.news-img.art-2{height:200px;margin-bottom:16px}
+.also{margin:60px 0 24px;font-size:28px}
+.article .grid3{margin-top:0}
+.job{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:#fff;padding:28px;margin-bottom:16px}
+.job h3{font-size:20px;margin-bottom:10px}
+.job p{margin:12px 0 0;color:var(--mid,#666)}
+.chips span{display:inline-block;border:2px solid #000;padding:2px 12px;font-size:14px;font-weight:700;margin:0 8px 0 0}
+.spont{margin-top:40px}.spont h3{font-size:24px}.spont p{margin:6px 0 12px}
+@media (max-width:860px){
+  .page-head{padding:36px 0}.page-head h1{font-size: 30px}
+  .art-hero{height:200px}
+  .job{grid-template-columns:1fr}
+}
+.job h3 a:hover{border-bottom:3px solid var(--orange,#ff7900)}
+.lead-job{font-size:22px;margin:22px 0 10px}
+.sub{font-size:28px;margin:34px 0 14px}
+.list{margin:0 0 30px 22px}
+.list li{font-size:19px;line-height:1.6;margin-bottom:8px}
+.list li::marker{color:var(--orange,#ff7900)}
