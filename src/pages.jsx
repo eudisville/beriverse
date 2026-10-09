@@ -88,7 +88,7 @@ export function CareersPage({ t, x }) {
           <h2>{x.whyTitle}</h2>
           <div className="grid3">
             {x.why.map(([h, p]) => (
-              <article className="card" key={h}><span className="sq" /><h3>{h}</h3><p>{p}</p></article>
+              <article className="card" key={h}><h3>{h}</h3><p>{p}</p></article>
             ))}
           </div>
         </div>

@@ -17,14 +17,14 @@ export const T = {
     expTitle: "Notre expertise",
     tabs: ["Entreprises", "Grand public"],
     biz: [
-      ["Consulting", "Accompagnement stratégique pour la transformation digitale de votre entreprise."],
-      ["Edge AI", "Exploitez vos données pour prendre des décisions plus rapides et automatiser vos processus."],
+      ["Technology Consulting", "Accompagnement stratégique pour la transformation digitale de votre entreprise."],
       ["Formation", "Programmes sur mesure pour développer les compétences de vos équipes."],
+      ["Edge AI", "Exploitez vos données pour prendre des décisions plus rapides et automatiser vos processus."],
     ],
     pub: [
       ["Beriverse Academy", "Cours en ligne et en présentiel, du niveau débutant au niveau professionnel."],
       ["English Center", "Apprendre l'anglais à votre rythme, sur mobile, même avec une connexion faible."],
-      ["Applications Grand Public", "Applications mobiles et web pour faciliter la vie quotidienne des familles."],
+      // ["Applications Grand Public", "Applications mobiles et web pour faciliter la vie quotidienne des familles."],
     ],
     figTitle: "Notre impact en chiffres",
     figs: [["1000+", "apprenants formés"], ["25+", "entreprises accompagnées"], ["3", "années d'existence"], ["100+", "collaborateurs"]],
@@ -40,7 +40,7 @@ export const T = {
     careersBtn: "Voir les offres",
     contactTitle: "Une question ? Écrivez-nous",
     name: "Votre nom", email: "Votre e-mail", msg: "Votre message", send: "Envoyer", sent: "Message envoyé. Nous vous répondons sous 48 h.",
-    foot: ["Notre groupe", "Notre impact", "Notre expertise", "Actualités", "Finance", "Presse", "Carrières"],
+    foot: ["Notre groupe", "Notre impact", "Notre expertise", "Actualités", "Carrières"],
     rights: "Tous droits réservés.",
   },
   en: {
