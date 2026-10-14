@@ -3,28 +3,30 @@ export const BRAND = "Beriverse";
 
 export const T = {
   fr: {
-    top: { biz: "Beriverse Incorporation", pub: "Grand Public", sites: "Tous nos sites", media: "" },
-    nav: ["A Propos", "Notre impact", "Notre expertise", "Actualités"],
-    navRight: ["Marketplace", "Carrières"],
+    top: { biz: "Beriverse Incorporation", sites: "Tous nos sites", pub: "Contactez-nous", media: "" },
+    nav: ["A Propos", "Notre impact", "Notre expertise", "Actualités & Insights"],
+    navRight: ["Equipe", "Carrières"],
     pause: "Mettre en pause", play: "Lecture", slide: "Diapositive",
-    discover: "Découvrir",
+    discover: "Découvrir →",
     slides: [
-      { title: "Beriverse lance Corance, une plateforme innovante pour l'assurance santé", color: "a" },
-      { title: "IA Agentique : Beriverse forme les entreprises dans l'automatisation de leurs processus", color: "b" },
+      { title: "IA Agentique : Beriverse forme les entreprises dans l'automatisation de leurs processus", color: "a" },
+      { title: "Beriverse lance Corance, une plateforme innovante pour l'assurance santé", color: "b" },
       { title: "Beriverse Academy : apprendre le code, l'IA et les métiers du numérique pour tous", color: "c" },
     ],
-    about: "est une société dans les secteurs de la technologie et de l'éducation dont la mission est d'accroître les capacité de tous. Nous proposons des services aux entreprises et au grand public, notamment dans les domaines de l'intelligence artificielle, de la formation et du développement d'applications. Notre objectif est de créer un impact positif et durable dans la société grâce à l'innovation et à l'éducation.",
+    about: "est un groupe dédié à la transformation technologique et au développement des compétences. Nous accompagnons les entreprises dans leur évolution numérique et les individus dans leur apprentissage, en créant des solutions et des opportunités pour bâtir le monde de demain.",
     expTitle: "Notre expertise",
     tabs: ["Entreprises", "Grand public"],
+    // Exemple pour biz
     biz: [
-      ["Technology Consulting", "Accompagnement stratégique pour la transformation digitale de votre entreprise."],
-      ["Formation", "Programmes sur mesure pour développer les compétences de vos équipes."],
-      ["Edge AI", "Exploitez vos données pour prendre des décisions plus rapides et automatiser vos processus."],
+      ["Technology Consulting", "Accompagner les entreprises dans la modernisation de leurs processus, le choix des technologies et la mise en œuvre de solutions numériques.", "card-tech"],
+      ["Edge AI", "Concevoir et intégrer des technologies avancées qui transforment les données et les systèmes d'information en capacités d'intelligence et d'automatisation.", "card-ai"],
+      ["Corporate Learning", "Développer les compétences des collaborateurs, managers et dirigeants pour améliorer leur efficacité et accompagner la transformation des organisations.", "card-formation"],
     ],
+
+    // Exemple pour pub
     pub: [
-      ["Beriverse Academy", "Cours en ligne et en présentiel, du niveau débutant au niveau professionnel."],
-      ["English Center", "Apprendre l'anglais à votre rythme, sur mobile, même avec une connexion faible."],
-      // ["Applications Grand Public", "Applications mobiles et web pour faciliter la vie quotidienne des familles."],
+      ["Beriverse Academy", "Rendre les compétences numériques et professionnelles accessibles, pratiques et directement applicables.", "card-academy"],
+      ["English Center", "Permettre aux apprenants de développer un anglais réellement utilisable dans leur vie professionnelle, leurs études et leurs projets internationaux.", "card-english"],
     ],
     figTitle: "Notre impact en chiffres",
     figs: [["1000+", "apprenants formés"], ["25+", "entreprises accompagnées"], ["3", "années d'existence"], ["100+", "collaborateurs"]],
@@ -46,7 +48,7 @@ export const T = {
   en: {
     top: { biz: "Beriverse Inc.", pub: "Beriverse Consumer", sites: "All our sites", media: "Media library", conf: "Academy" },
     nav: ["About", "Our impact", "Our expertise", "Our news"],
-    navRight: ["Finance", "Press", "Careers"],
+    navRight: ["Team", "Careers"],
     pause: "Pause", play: "Play", slide: "Slide",
     discover: "Discover",
     slides: [
@@ -58,14 +60,14 @@ export const T = {
     expTitle: "Our expertise",
     tabs: ["Business", "Consumers"],
     biz: [
-      ["Consulting", "Strategic guidance for your company's digital transformation."],
-      ["Edge AI", "Leverage your data to make faster decisions and automate your processes."],
-      ["Professional training", "Tailor-made programs to develop your teams' skills."],
+      ["Consulting", "Strategic guidance for your company's digital transformation.", "card-tech"],
+      ["Edge AI", "Leverage your data to make faster decisions and automate your processes.", "card-formation"],
+      ["Professional training", "Tailor-made programs to develop your teams' skills.", "card-ai"],
     ],
     pub: [
-      ["Beriverse Academy", "Online and in-person courses, from beginner to professional."],
-      ["English Center", "Learn English at your own pace, on mobile, even with a low connection."],
-      ["Apps", "Mobile and web applications to make everyday life easier for families."],
+      ["Beriverse Academy", "Online and in-person courses, from beginner to professional.", "card-academy"],
+      ["English Center", "Learn English at your own pace, on mobile, even with a low connection.", "card-english"],
+      ["Apps", "Mobile and web applications to make everyday life easier for families.", "card-apps"],
     ],
     figTitle: "Our impact in numbers",
     figs: [["1,000+", "learners trained"], ["25+", "companies supported"], ["3", "Years of existence"], ["100", "employees"]],

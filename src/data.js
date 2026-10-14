@@ -14,13 +14,16 @@ export const EXTRA = {
     ],
     careersTitle: "Carrières", careersIntro: "Inspirons et transformons le monde. Rejoignez une équipe qui construit la technologie et l'éducation de demain.",
     whyTitle: "Pourquoi nous rejoindre",
-    why: [["Impact réel", "Vos projets touchent des milliers d'apprenants et d'entreprises."], ["Apprendre en continu", "Accès à Beriverse Academy et à des formations internes."], ["Équipe ambitieuse", "Une culture d'innovation, d'entraide et de responsabilité."]],
+    why: 
+    [["Impact réel", "Participez à la création de solutions technologiques majeures. Vos projets façonnent directement le quotidien de milliers d'apprenants et transforment les opérations des entreprises à travers le continent."], 
+    ["Apprendre en continu", "Développez vos compétences sans interruption. Bénéficiez d'un accès illimité à l'écosystème Beriverse Academy, aux certifications internes et à un accompagnement personnalisé pour propulser votre carrière."], 
+    ["Équipe ambitieuse", "Évoluez au sein d'un environnement stimulant axé sur l'excellence. Nous cultivons une culture d'innovation audacieuse, d'entraide constante et d'autonomie pour relever ensemble des défis technologiques complexes."]],
     jobsTitle: "Nos offres", apply: "Postuler",
     email: "hello@beriverse.fr", subject: "Candidature : ",
     jobs: [
       {
         slug: "apporteur",
-        title: "Apporteur d’Affaires",
+        title: "Apporteur d’Affaires (H/F)",
         type: "Freelance",
         place: "Abidjan, Côte d'Ivoire",
         desc: "Identifiez des opportunités commerciales et mettez Beriverse en relation avec des entreprises ayant des besoins en formation et en technologie.",
@@ -43,7 +46,7 @@ export const EXTRA = {
       },
       {
         slug: "consultant-formateur-analyse-donnees",
-        title: "Consultant Formateur / Formatrice en Analyse de Données",
+        title: "Consultant Formateur - Analyse de Données (H/F)",
         type: "Freelance",
         place: "Abidjan, Côte d'Ivoire",
         desc: "Former les professionnels et les équipes à l’analyse, la visualisation et l’exploitation des données pour améliorer leur performance.",
@@ -64,7 +67,7 @@ export const EXTRA = {
           "Une expérience en entreprise ou en conseil est un plus"
         ]
       },
-      { slug: "developpement-commercial", title: "Chargé(e) de développement commercial", type: "CDI", place: "Abidjan", desc: "Développer le portefeuille d'entreprises clientes et suivre les partenariats.",
+      { slug: "developpement-commercial", title: "Chargé(e) de Développement Commercial", type: "CDI", place: "Abidjan", desc: "Développer le portefeuille d'entreprises clientes et suivre les partenariats.",
         missions: ["Prospecter et présenter nos offres aux entreprises", "Négocier et suivre les contrats et partenariats", "Remonter les besoins du marché aux équipes produit"],
         profile: ["Bac+3 minimum, première expérience commerciale", "Aisance relationnelle et sens du résultat", "Intérêt pour la technologie et l'éducation"] },
     ],

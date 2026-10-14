@@ -94,16 +94,24 @@ export default function App() {
           <h2>{t.expTitle}</h2>
           <div className="tabs" role="tablist">
             {t.tabs.map((l, k) => (
-              <button key={l} role="tab" aria-selected={tab === k} className={tab === k ? "tab on" : "tab"} onClick={() => setTab(k)}>{l}</button>
+              <button 
+                key={l} 
+                role="tab" 
+                aria-selected={tab === k} 
+                className={tab === k ? "tab on" : "tab"} 
+                onClick={() => setTab(k)}
+              >
+                {l}
+              </button>
             ))}
           </div>
+          
           <div className="grid3">
-            {cards.map(([h, p]) => (
-              <article className="card" key={h}>
-                {/* <span className="sq" /> */}
+            {cards.map(([h, p, bgClass]) => (
+              <article className={`card ${bgClass || ''}`} key={h}>
                 <h3>{h}</h3>
                 <p>{p}</p>
-                <a className="link" href="/#top">{t.discover}</a>
+                <a className="link" href="/#top" style={{ color: "yellow", borderBottom: "1px solid yellow" }}>{t.discover}</a>
               </article>
             ))}
           </div>
