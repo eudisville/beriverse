@@ -55,24 +55,34 @@ font-weight: bold;white-space: nowrap;}
 
 /* Hero */
 .hero{position:relative;padding:0 0 120px 20px}
-.hero-img{height:530px;width:calc(100% - 28px);overflow:hidden;position:relative}
-.hero-img svg{position:absolute;inset:0;width:100%;height:100%}
-.scene-a{background: url(./assets/hand.jpg) center/cover no-repeat ;}
-.scene-b{background: url(./assets/center.jpg) center/cover no-repeat ;}
-.scene-c{background: url(./assets/dcp.jpg) center/cover no-repeat ;}
-.sun{fill:#fff;opacity:.5}
-.hill1{fill:#8a7a4a}.hill2{fill:#d9d6cc}
-.scene-b .hill1{fill:#233}.scene-b .hill2{fill:#556}
-.dish ellipse{fill:#e8e8e8;stroke:#999}.dish rect{fill:#f5f5f5;stroke:#999}
-.hero-card{position:absolute;right:130px;bottom:40px;width:min(574px,60%);min-height:285px;background:var(--grey);padding:38px;animation:cardin .5s ease}
-@keyframes cardin{from{opacity:0}to{opacity:1}}
+.hero-img{height:530px;width:calc(100% - 28px);overflow:hidden;position:relative;background:#222}
+
+/* Chaque image est une couche empilée ; seule la couche .on est visible */
+.hero-slide{position:absolute;inset:0;opacity:0;transform:scale(1.06);
+  transition:opacity 1s ease, transform 3s ease-out}
+.hero-slide.on{opacity:1;transform:scale(1)}   /* léger zoom arrière pendant l'affichage */
+
+.scene-a{background:url(./assets/hand.jpg) center/cover no-repeat}
+.scene-b{background:url(./assets/center.jpg) center/cover no-repeat}
+.scene-c{background:url(./assets/dcp.jpg) center/cover no-repeat}
+
+/* Carte grise : glisse doucement vers le haut à chaque changement */
+.hero-card{position:absolute;right:130px;bottom:40px;width:min(574px,60%);min-height:285px;background:var(--grey);padding:38px;
+  animation:cardin .7s cubic-bezier(.2,.7,.2,1)}
+@keyframes cardin{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 .hero-card h1{font-size:30px;line-height:1.17;font-weight:500;margin-bottom:34px}
-.btn{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:18px;padding:12px 22px;border:2px solid var(--blue);transition:background .3s,color .15s}
+
+.btn{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:18px;padding:12px 22px;border:2px solid var(--blue);transition:background .3s,color .15s,border-color .3s,transform .1s}
 .btn:hover{background:#000;color:#fff;border-color:#000}
+.btn:active{transform:translateY(1px)}
+
 .hero-ctrl{position:absolute;left:376px;bottom:76px;display:flex;gap:8px}
 .pill{background:var(--grey);border-radius:20px;height:32px;min-width:32px;display:flex;align-items:center;justify-content:center;font-size:11px;padding:0 12px;gap:18px}
-.dot{width:10px;height:10px;border-radius:50%;background:#000;opacity:.35}
-.dot.on{opacity:1}
+
+/* Points : le point actif s'allonge en pastille */
+.dot{width:10px;height:10px;border-radius:50%;background:#000;opacity:.35;
+  transition:width .35s ease, opacity .35s ease, border-radius .35s ease}
+.dot.on{opacity:1;width:28px;border-radius:6px}
 
 /* Sections */
 .sec{padding:40px 0; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
@@ -226,6 +236,7 @@ font-weight: bold;white-space: nowrap;}
   transform: translateY(-2px);
 }
 
+
 /* Responsive (Élargi pour inclure les MacBook 13" et petits portables) */
 @media (max-width: 1280px) {
   .links { gap: 20px; font-size: 15px; }
@@ -268,7 +279,8 @@ font-weight: bold;white-space: nowrap;}
   .btn { text-align: center; }
 
   /* Responsive Footer (Mobile) */
-  .foot { padding: 40px 0 24px; }
+  .foot { padding: 40px 0 24px; width: 100%; }
+  .foot-main { flex-direction: column; align-items: center; gap: 24px; text-align: center; }
   .flinks { display: none; }
   .foot-bottom { margin-top: 32px; padding-top: 20px; flex-direction: column-reverse; align-items: center; justify-content: center; gap: 20px; text-align: center; }
   .social-links { justify-content: center; gap: 24px; }

@@ -19,6 +19,21 @@
 .job p{margin:12px 0 0;color:#262626}
 .chips span{display:inline-block;border:1px solid rgb(43, 43, 43);padding:2px 12px;font-size:14px;font-weight:500;margin:0 8px 0 0}
 .spont{margin-top:40px}.spont h3{font-size:24px}.spont p{margin:6px 0 12px}
+
+/* Page L'Équipe */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.member{display:flex;flex-direction:column;gap:8px}
+.avatar{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--grey,#eee);margin-bottom:10px;display:block}
+.avatar.ph{display:flex;align-items:center;justify-content:center;font-size:56px;font-weight:700;color:var(--orange,#ff7900)}
+.member h3{font-size:22px;line-height:1.2}
+.member .role{font-size:16px;font-weight:normal}
+.member p{color:#262626; font-weight: 400;}
+.social{align-items:center;justify-content:center;width:36px;height:36px;color:#0f20df;align-self:flex-start;margin-top:6px;transition:background .15s,color .15s}
+.social:hover{color:#000}
+
+@media (max-width:1100px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.team-grid{grid-template-columns:1fr}}
+
 @media (max-width:860px){
   .page-head{padding:36px 0}.page-head h1{font-size: 30px}
   .art-hero{height:200px}

@@ -5,7 +5,7 @@ export const T = {
   fr: {
     top: { biz: "Beriverse Incorporation", sites: "Tous nos sites", pub: "Contactez-nous", media: "" },
     nav: ["A Propos", "Notre impact", "Notre expertise", "Actualités & Insights"],
-    navRight: ["Equipe", "Carrières"],
+    navRight: ["Carrières"],
     pause: "Mettre en pause", play: "Lecture", slide: "Diapositive",
     discover: "Découvrir →",
     slides: [
@@ -18,15 +18,15 @@ export const T = {
     tabs: ["Entreprises", "Grand public"],
     // Exemple pour biz
     biz: [
+      ["Corporate Learning", "Développer les compétences des collaborateurs, managers et dirigeants pour améliorer leur efficacité et accompagner la transformation des organisations.", "card-formation"],
       ["Technology Consulting", "Accompagner les entreprises dans la modernisation de leurs processus, le choix des technologies et la mise en œuvre de solutions numériques.", "card-tech"],
       ["Edge AI", "Concevoir et intégrer des technologies avancées qui transforment les données et les systèmes d'information en capacités d'intelligence et d'automatisation.", "card-ai"],
-      ["Corporate Learning", "Développer les compétences des collaborateurs, managers et dirigeants pour améliorer leur efficacité et accompagner la transformation des organisations.", "card-formation"],
     ],
 
     // Exemple pour pub
     pub: [
       ["Beriverse Academy", "Rendre les compétences numériques et professionnelles accessibles, pratiques et directement applicables.", "card-academy"],
-      ["English Center", "Permettre aux apprenants de développer un anglais réellement utilisable dans leur vie professionnelle, leurs études et leurs projets internationaux.", "card-english"],
+      // ["English Center", "Permettre aux apprenants de développer un anglais réellement utilisable dans leur vie professionnelle, leurs études et leurs projets internationaux.", "card-english"],
     ],
     figTitle: "Notre impact en chiffres",
     figs: [["1000+", "apprenants formés"], ["25+", "entreprises accompagnées"], ["3", "années d'existence"], ["100+", "collaborateurs"]],

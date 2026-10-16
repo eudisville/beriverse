@@ -2,7 +2,8 @@ import { useEffect, useState, useRef } from "react";
 import { BRAND, T } from "./content.js";
 import { EXTRA } from "./data.js";
 import { useLocation } from "./router.js";
-import { NewsPage, ArticlePage, CareersPage, JobPage } from "./pages.jsx";
+import { TEAM_TEXT } from "./team.js";
+import { NewsPage, ArticlePage, CareersPage, JobPage, TeamPage } from "./pages.jsx";
 import Logotype from "./assets/Logo.png";
 import LogotypeT from "./assets/Noir Logo.png";
 
@@ -25,7 +26,11 @@ function Hero({ t }) {
   const s = t.slides[i];
   return (
     <section className="hero" id="top" aria-roledescription="carousel">
-      <div className={`hero-img scene-${s.color}`} role="img" aria-label={s.title}></div>
+      <div className="hero-img" role="img" aria-label={s.title}>
+        {t.slides.map((sl, n) => (
+          <div key={n} className={`hero-slide scene-${sl.color}${n === i ? " on" : ""}`} />
+        ))}
+      </div>
       <div className="hero-card" key={i}>
         <h1>{s.title}</h1>
         <a className="btn" href="/#expertise">{t.discover}</a>
@@ -94,24 +99,15 @@ export default function App() {
           <h2>{t.expTitle}</h2>
           <div className="tabs" role="tablist">
             {t.tabs.map((l, k) => (
-              <button 
-                key={l} 
-                role="tab" 
-                aria-selected={tab === k} 
-                className={tab === k ? "tab on" : "tab"} 
-                onClick={() => setTab(k)}
-              >
-                {l}
-              </button>
+              <button key={l} role="tab" aria-selected={tab === k} className={tab === k ? "tab on" : "tab"} onClick={() => setTab(k)}>{l}</button>
             ))}
           </div>
-          
           <div className="grid3">
             {cards.map(([h, p, bgClass]) => (
               <article className={`card ${bgClass || ''}`} key={h}>
                 <h3>{h}</h3>
                 <p>{p}</p>
-                <a className="link" href="/#top" style={{ color: "yellow", borderBottom: "1px solid yellow" }}>{t.discover}</a>
+                <a className="link" href="/#top" style={{ color: "white", borderBottom: "1px solid white" }}>{t.discover}</a>
               </article>
             ))}
           </div>
@@ -170,6 +166,7 @@ export default function App() {
   let page = home;
   if (path === "/actualites") page = <NewsPage t={t} x={x} />;
   else if (path.startsWith("/actualites/")) page = <ArticlePage t={t} x={x} id={Number(path.split("/")[2])} />;
+  else if (path === "/equipe") page = <TeamPage x={x} lang={lang} />;
   else if (path === "/carrieres") page = <CareersPage t={t} x={x} />;
   else if (path.startsWith("/carrieres/")) page = <JobPage x={x} slug={path.split("/")[2]} />;
 
@@ -214,6 +211,7 @@ export default function App() {
             <Logo />
             <nav className={menu ? "links open" : "links"}>
               {t.nav.map((n, k) => <a key={n} href={anchors[k]} onClick={() => setMenu(false)}>{n}</a>)}
+              <a href="/equipe" onClick={() => setMenu(false)}>{TEAM_TEXT[lang].nav}</a>
             </nav>
           </div>
           <div className="row gap-l">
