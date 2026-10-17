@@ -22,49 +22,49 @@ export const EXTRA = {
     email: "hello@beriverse.fr", subject: "Candidature : ",
     jobs: [
       {
-        slug: "apporteur",
-        title: "Apporteur d’Affaires (H/F)",
-        type: "Freelance",
+        slug: "job1",
+        title: "Formateur Data appliquée à la Banque et à l’Assurance (H/F)",
+        type: "Consultance",
         place: "Abidjan, Côte d'Ivoire",
-        desc: "Identifiez des opportunités commerciales et mettez Beriverse en relation avec des entreprises ayant des besoins en formation et en technologie.",
+        desc: "Concevoir et animer des formations professionnelles permettant aux équipes bancaires et assurantielles d'exploiter les données et les outils de Business Intelligence pour automatiser leurs reportings, accélérer leurs analyses et améliorer la prise de décision.",
 
         missions: [
-          "Identifier des entreprises et décideurs susceptibles d’avoir besoin des services de Beriverse",
-          "Détecter et qualifier des opportunités commerciales dans son réseau",
-          "Mettre Beriverse en relation avec les prospects qualifiés",
-          "Faciliter la prise de contact et contribuer au suivi des opportunités",
-          "Développer et entretenir un réseau professionnel pertinent"
+          "Concevoir des programmes de formation adaptés aux besoins des banques et compagnies d’assurance.",
+          "Former les professionnels à l’analyse, à la structuration et à la visualisation des données.",
+          "Former à l’automatisation des reportings et à la production d’indicateurs de performance",
+          "Développer des cas pratiques liés aux opérations bancaires, au crédit, aux sinistres et aux risques.",
+          "Intégrer les bonnes pratiques de qualité, de confidentialité et de gouvernance des données."
         ],
 
         profile: [
-          "Excellent réseau professionnel en Côte d’Ivoire",
-          "Aisance relationnelle et capacité à identifier des opportunités",
+          "Compréhension des opérations bancaires et/ou assurantielles.",
+          "Connaissance des indicateurs liés au crédit, aux risques, aux opérations, aux sinistres ou à la performance commerciale.",
           "Bonne compréhension des enjeux des entreprises",
           "Autonomie, dynamisme et sens du business",
-          "Une expérience commerciale, B2B ou en développement d’affaires est un plus"
+          "Capacité à vulgariser les concepts techniques."
         ]
       },
       {
-        slug: "consultant-formateur-analyse-donnees",
-        title: "Consultant Formateur - Analyse de Données (H/F)",
-        type: "Freelance",
+        slug: "job3",
+        title: "Consultant en Transformation Digitale (H/F)",
+        type: "Consultance",
         place: "Abidjan, Côte d'Ivoire",
-        desc: "Former les professionnels et les équipes à l’analyse, la visualisation et l’exploitation des données pour améliorer leur performance.",
+        desc: "Accompagner les entreprises dans l’analyse, la modernisation et la digitalisation de leurs processus métiers afin de réduire les tâches manuelles, limiter les goulots d’étranglement, accélérer les opérations et améliorer la performance organisationnelle.",
 
         missions: [
-          "Animer des sessions de formation en analyse de données en ligne et en présentiel",
-          "Concevoir des supports, exercices et cas pratiques adaptés aux besoins des apprenants",
-          "Former aux outils d’analyse et de visualisation tels qu’Excel et Power BI",
-          "Accompagner les apprenants dans la réalisation de projets et l’analyse de données réelles",
-          "Évaluer la progression des apprenants et proposer des axes d’amélioration"
+          "Réaliser des diagnostics des processus métiers et des pratiques opérationnelles.",
+          "Cartographier les processus existants et proposer des processus cibles optimisés.",
+          "Identifier les opportunités de digitalisation, d’automatisation et d’intégration de l’intelligence artificielle.",
+          "Élaborer des recommandations fonctionnelles et des feuilles de route de transformation.",
+          "Accompagner le changement, la prise en main des outils et l’adoption des nouvelles méthodes de travail."
         ],
 
         profile: [
-          "Expérience en analyse de données et maîtrise d’Excel et/ou Power BI",
-          "Bonne capacité à vulgariser les concepts liés aux données",
-          "Aisance dans l’animation de formations professionnelles",
-          "Esprit pédagogique et orientation pratique",
-          "Une expérience en entreprise ou en conseil est un plus"
+          "Bac+3 à Bac+5 en systèmes d’information, informatique, gestion de projet, management ou domaine connexe.",
+          "Maîtrise des méthodes d’analyse et de cartographie des processus.",
+          "Expérience sur des projets de transformation digitale ou de refonte de processus.",
+          "Connaissance de BPMN, Lean Management, Agile ou des outils de gestion de projet.",
+          "Connaissance des enjeux de cybersécurité, de confidentialité et de gouvernance des données."
         ]
       },
       { slug: "developpement-commercial", title: "Chargé(e) de Développement Commercial", type: "CDI", place: "Abidjan", desc: "Développer le portefeuille d'entreprises clientes et suivre les partenariats.",
