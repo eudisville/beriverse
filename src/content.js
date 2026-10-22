@@ -18,8 +18,8 @@ export const T = {
     tabs: ["Entreprises", "Grand public"],
     // Exemple pour biz
     biz: [
-      ["Corporate Learning", "Développer les compétences des collaborateurs, managers et dirigeants pour améliorer leur efficacité et accompagner la transformation des organisations.", "card-formation"],
-      ["Technology Consulting", "Accompagner les entreprises dans la modernisation de leurs processus, le choix des technologies et la mise en œuvre de solutions numériques.", "card-tech"],
+      ["Formation Entreprise", "Développer les compétences des collaborateurs, managers et dirigeants pour améliorer leur efficacité et accompagner la transformation des organisations.", "card-formation"],
+      ["Consulting IT", "Accompagner les entreprises dans la modernisation de leurs processus, le choix des technologies et la mise en œuvre de solutions numériques.", "card-tech"],
       ["Edge AI", "Concevoir et intégrer des technologies avancées qui transforment les données et les systèmes d'information en capacités d'intelligence et d'automatisation.", "card-ai"],
     ],
 
