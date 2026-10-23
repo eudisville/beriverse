@@ -22,17 +22,58 @@
 
 /* Page L'Équipe */
 .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
-.member{display:flex;flex-direction:column;gap:8px}
-.avatar{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--grey,#eee);margin-bottom:10px;display:block}
-.avatar.ph{display:flex;align-items:center;justify-content:center;font-size:56px;font-weight:700;color:var(--orange,#ff7900)}
-.member h3{font-size:22px;line-height:1.2}
-.member .role{font-size:16px;font-weight:normal}
-.member p{color:#262626; font-weight: 400;}
-.social{align-items:center;justify-content:center;width:36px;height:36px;color:#0f20df;align-self:flex-start;margin-top:6px;transition:background .15s,color .15s}
-.social:hover{color:#000}
 
-@media (max-width:1100px){.team-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:560px){.team-grid{grid-template-columns:1fr}}
+/* Carte */
+.member{
+  display:flex;
+  flex-direction:column;
+  background:#fff;
+  border:1px solid #e6e6e6;
+  overflow:hidden;
+}
+
+/* Photo : pleine largeur, collée aux bords de la carte */
+.avatar{
+  width:100%;
+  aspect-ratio:15/16;
+  object-fit:cover;
+  object-position:center top;
+  background:var(--grey,#eee);
+  display:block;
+  margin:0;
+}
+.avatar.ph{
+  display:flex;align-items:center;justify-content:center;
+  font-size:56px;font-weight:700;color:var(--orange,#ff7900);
+}
+
+/* Zone texte */
+.info{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  padding:22px 64px 32px 24px; /* marge à droite pour l'icône */
+  min-height:120px;
+}
+.member h3{font-size:20px;font-weight:500;line-height:1.2;color:#111;margin:0}
+.member .role{font-size:16px;font-weight:400;color:#7a7a7a}
+.member p{color:#262626;font-weight:400}
+
+/* Icône LinkedIn en haut à droite, grise */
+.social{
+  position:absolute;
+  top:22px;
+  right:22px;
+  display:flex;align-items:center;justify-content:center;
+  width:24px;height:24px;
+  color:#9b9b9b;
+  transition:color .15s;
+}
+.social:hover{color:#0a66c2}
+
+@media (max-width:1024px){ .team-grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:560px){ .team-grid{grid-template-columns:1fr} }
 
 @media (max-width:860px){
   .page-head{padding:36px 0}.page-head h1{font-size: 30px}

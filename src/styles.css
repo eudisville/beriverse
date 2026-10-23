@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
+*::selection{background: rgba(0, 0, 255, 0.145);color:#070707}
+
 :root{
   --orange:#ff7900; --black:#000; --grey:#eee; --mid:#666; --line:#ddd; --green:#32a02c; --blue: #0051ff;
   --font:"Google Sans",Arial,sans-serif;
@@ -152,7 +154,7 @@ font-weight: bold;white-space: nowrap;}
   width: 100%;
   height: 50%;
   margin-top: 40px;
-  background: url(./assets/walk.jpg) no-repeat;
+  background: url(./assets/walk.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
