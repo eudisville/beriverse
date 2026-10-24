@@ -2,7 +2,7 @@
 export const EXTRA = {
   fr: {
     all: "Toutes", allNews: "Toutes les actualités", back: "← Toutes les actualités", home: "Accueil",
-    newsTitle: "Nos Actualités", newsIntro: "Annonces, lancements et temps forts de Beriverse.",
+    newsTitle: "Actualités & Insights", newsIntro: "Annonces, lancements et temps forts de Beriverse.",
     others: "À lire aussi", notFound: "Cet article n'existe pas.",
     newsBody: [
       ["Beriverse annonce le lancement de Corance, une plateforme pensée pour simplifier la gestion de l'assurance santé : souscription, suivi des remboursements et relation client réunis au même endroit.",

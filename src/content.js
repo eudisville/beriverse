@@ -1,6 +1,23 @@
 // ✏️ Modifiez ici le nom et les textes de votre entreprise.
 export const BRAND = "Beriverse";
 
+import afribank from "./assets/afribank.png";
+import afrolink from "./assets/afrolink.png";
+import civ from "./assets/civ.png";
+import corance from "./assets/corance.png";
+import beh from "./assets/beH.png";
+import moven from "./assets/moven.png";
+
+
+export const PARTNERS = [
+  { name: "CIV", logo: civ },
+  { name: "Afribank", logo: afribank },
+  { name: "Afrolink", logo: afrolink },
+  { name: "Corance", logo: corance },
+  { name: "beH", logo: beh },
+  { name: "Moven", logo: moven },
+];
+
 export const T = {
   fr: {
     top: { biz: "Beriverse Incorporation", sites: "Tous nos sites", pub: "Contactez-nous", media: "" },
@@ -13,24 +30,26 @@ export const T = {
       { title: "Beriverse lance Corance, une plateforme innovante pour l'assurance santé", color: "b" },
       { title: "Beriverse Academy : apprendre le code, l'IA et les métiers du numérique pour tous", color: "c" },
     ],
-    about: "est un groupe dédié à la transformation technologique et au développement des compétences. Nous accompagnons les entreprises dans leur évolution numérique et les individus dans leur apprentissage, en créant des solutions et des opportunités pour bâtir le monde de demain.",
+    about: "est un groupe dédié à la transformation technologique et au développement des compétences. Nous vous aidons à améliorer votre performance, à gagner en productivité et à saisir de nouvelles opportunités grâce à des solutions technologiques adaptées et des formations axées sur des résultats concrets. Que vous soyez une entreprise ou un professionnel, bénéficiez des outils et des compétences nécessaires pour relever vos défis, accélérer votre évolution et construire votre avenir.",
     expTitle: "Notre expertise",
     tabs: ["Entreprises", "Grand public"],
     // Exemple pour biz
     biz: [
-      ["Formation Entreprise", "Développer les compétences des collaborateurs, managers et dirigeants pour améliorer leur efficacité et accompagner la transformation des organisations.", "card-formation"],
-      ["Consulting IT", "Accompagner les entreprises dans la modernisation de leurs processus, le choix des technologies et la mise en œuvre de solutions numériques.", "card-tech"],
-      ["Edge AI", "Concevoir et intégrer des technologies avancées qui transforment les données et les systèmes d'information en capacités d'intelligence et d'automatisation.", "card-ai"],
+      ["Formation Entreprise", "Développez les compétences de vos équipes pour gagner en efficacité, améliorer vos performances et accélérer la transformation de votre organisation.", "card-formation"],
+      ["Consulting IT", "Modernisez vos processus, adoptez les technologies adaptées à vos enjeux et gagnez en productivité grâce à des solutions numériques concrètes.", "card-tech"],
+      ["Edge AI", "Transformez vos données en intelligence exploitable et automatisez vos processus grâce à des technologies avancées qui renforcent votre performance et votre capacité d’innovation.", "card-ai"],
     ],
+    partnersLabel: "Ils nous font confiance",
+    partnersTitle: "Les entreprises font confiance à Beriverse pour développer leurs compétences et accélérer leur transformation technologique.",  
 
     // Exemple pour pub
     pub: [
-      ["Beriverse Academy", "Rendre les compétences numériques et professionnelles accessibles, pratiques et directement applicables.", "card-academy"],
+      ["Beriverse Academy", "Développez des compétences concrètes, immédiatement applicables pour gagner en efficacité, évoluer professionnellement et saisir de nouvelles opportunités.", "card-academy"],
       // ["English Center", "Permettre aux apprenants de développer un anglais réellement utilisable dans leur vie professionnelle, leurs études et leurs projets internationaux.", "card-english"],
     ],
     figTitle: "Notre impact en chiffres",
-    figs: [["1000+", "apprenants formés"], ["25+", "entreprises accompagnées"], ["3", "années d'existence"], ["100+", "collaborateurs"]],
-    newsTitle: "Dernières actualités",
+    figs: [["1000+", "Apprenants formés"], ["35+", "Entreprises accompagnées"], ["3", "Années d'existence"], ["150+", "Projets Réalisés"]],
+    newsTitle: "Actualités & Insights",
     news: [
       ["Technologie", "Lancement de la plateforme Corance pour les assurances", "12 Septembre 2026"],
       ["Education", "OpenClass 2026-2027 : L'IA la nouvelle ère du numérique", "28 août 2026"],
@@ -69,6 +88,8 @@ export const T = {
       ["English Center", "Learn English at your own pace, on mobile, even with a low connection.", "card-english"],
       ["Apps", "Mobile and web applications to make everyday life easier for families.", "card-apps"],
     ],
+    partnersLabel: "Our partners",
+    partnersTitle: "Companies and institutions rely on Beriverse to build their AI, Data and Cybersecurity skills.",
     figTitle: "Our impact in numbers",
     figs: [["1,000+", "learners trained"], ["25+", "companies supported"], ["3", "Years of existence"], ["100", "employees"]],
     newsTitle: "Latest news",

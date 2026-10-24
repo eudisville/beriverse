@@ -9,7 +9,7 @@ export const MEMBERS = [
   { name: "Eudes M. Koffi", dept: "direction", photo: Eudes, linkedin: "https://www.linkedin.com/in/eudes-m-koffi-163a46203/",
     role: { fr: "Executive Manager", en: "Executive Manager" },
     bio: { fr: "Présentez ici le parcours et la vision de la personne en deux phrases.", en: "Describe this person's background and vision in two sentences." } },
-  { name: "Aman Kirihoua", dept: "tech", photo: Manu, linkedin: "https://www.linkedin.com/in/aman-kirihoua-857099232/",
+  { name: "Aman Kirihoua", dept: "tech", photo: Manu , linkedin: "https://www.linkedin.com/in/aman-kirihoua-857099232/",
     role: { fr: "Head of Opérations", en: "Head of Operations" },
     bio: { fr: "Responsable de l'architecture, de l'IA et des produits numériques.", en: "In charge of architecture, AI and digital products." } },
   { name: "Daniel Kra", dept: "edu", photo: Kra, linkedin: "https://www.linkedin.com/in/daniel-kra-58813b225/",

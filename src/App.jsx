@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { BRAND, T } from "./content.js";
+import { BRAND, T, PARTNERS } from "./content.js";
 import { EXTRA } from "./data.js";
 import { useLocation } from "./router.js";
 import { TEAM_TEXT } from "./team.js";
@@ -120,6 +120,22 @@ export default function App() {
           <div className="grid4">
             {t.figs.map(([n, l]) => (
               <div className="fig" key={l}><strong>{n}</strong><span>{l}</span></div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="sec partners" id="partenaires">
+        <div className="wrap">
+          <div className="partners-head">
+            <span className="partners-label">{t.partnersLabel}</span>
+            <h2>{t.partnersTitle}</h2>
+          </div>
+          <div className="partners-grid">
+            {PARTNERS.map(({ name, logo }) => (
+              <div className="partner" key={name}>
+                <img src={logo} alt={name} loading="lazy" />
+              </div>
             ))}
           </div>
         </div>
