@@ -4,7 +4,7 @@ export const BRAND = "Beriverse";
 import afribank from "./assets/afribank.png";
 import afrolink from "./assets/afrolink.png";
 import civ from "./assets/civ.png";
-import corance from "./assets/corance.png";
+import corance from "./assets/co.png";
 import beh from "./assets/beH.png";
 import moven from "./assets/moven.png";
 
