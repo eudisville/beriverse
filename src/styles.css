@@ -300,6 +300,7 @@ font-weight: bold;white-space: nowrap;}
   .refs-head { grid-template-columns: 1fr; gap: 12px; }
   .refs-head p { font-size: 20px; }
   .refs-photo img { height: 260px; }
+  .ref-logo img { max-width: 80px; max-height: 80px; }
   .ref-card { border-right: 0; border-bottom: 1px solid #2c2c2c; }
 }
 
