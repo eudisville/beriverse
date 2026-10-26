@@ -8,6 +8,11 @@ import corance from "./assets/co.png";
 import beh from "./assets/BeH.png";
 import moven from "./assets/moven.png";
 
+// EVENT IMPORTS
+import eventsPhoto from "./assets/suite.jpg";
+import event1 from "./assets/camp.png";
+import event2 from "./assets/tremplin.png";
+
 
 export const PARTNERS = [
   { name: "CIV", logo: civ },
@@ -16,6 +21,24 @@ export const PARTNERS = [
   { name: "Corance", logo: corance },
   { name: "beH", logo: beh },
   { name: "Moven", logo: moven },
+];
+
+// EVENT DATA
+export const EVENTS_PHOTO = eventsPhoto;
+
+export const EVENTS = [
+  {
+    logo: event1,
+    name: "Camp National du Numérique",
+    year: "2025",
+    title: { fr: "Partenaire Pédagogique", en: "Training Partner" },
+  },
+  {
+    logo: event2,
+    name: "Tremplin Digital",
+    year: "2025",
+    title: { fr: "Partenaire Pédagogique Officiel", en: "Official Training Partner" },
+  },
 ];
 
 export const T = {
@@ -63,6 +86,9 @@ export const T = {
     name: "Votre nom", email: "Votre e-mail", msg: "Votre message", send: "Envoyer", sent: "Message envoyé. Nous vous répondons sous 48 h.",
     foot: ["Notre groupe", "Notre impact", "Notre expertise", "Actualités", "Carrières"],
     rights: "Tous droits réservés.",
+
+    eventsLabel: "Quelques Références",
+    eventsText: "Beriverse participe à ces du numérique et de la formation pour faire avancer l'adoption de l'IA et des compétences digitales.",
   },
   en: {
     top: { biz: "Beriverse Inc.", pub: "Beriverse Consumer", sites: "All our sites", media: "Media library", conf: "Academy" },
@@ -98,6 +124,8 @@ export const T = {
       ["Education", "OpenClass 2026-2027: AI – The New Digital Era", "Aug 28, 2026"],
       ["Business", "Launch of the English Center division", "Oct 5, 2026"],
     ],
+    eventsLabel: "Recognized by national leaders",
+  eventsText: "Beriverse takes part in major national events on digital skills and education to advance the adoption of AI.",
     more: "Read more",
     careersTitle: "Join Beriverse",
     careersText: "Engineers, trainers, sales: let's build the technology and education of tomorrow together.",

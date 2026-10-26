@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { BRAND, T, PARTNERS } from "./content.js";
+import { BRAND, T, PARTNERS, EVENTS, EVENTS_PHOTO } from "./content.js";
 import { EXTRA } from "./data.js";
 import { useLocation } from "./router.js";
 import { TEAM_TEXT } from "./team.js";
@@ -12,6 +12,15 @@ function Logo() {
     <a className="logo" href="/" aria-label={BRAND}>
       <img src={Logotype} alt={BRAND} />
     </a>
+  );
+}
+
+function Laurel() {
+  return (
+    <svg className="laurel" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 21c-.5 0-.9-.4-.9-.9V9.5a.9.9 0 0 1 1.8 0v10.6c0 .5-.4.9-.9.9z"/>
+      <path d="M11 11C8.5 11 6.5 9 6.5 6.5c2.5 0 4.5 2 4.5 4.5zM13 11c2.5 0 4.5-2 4.5-4.5-2.5 0-4.5 2-4.5 4.5zM11 16c-2.5 0-4.5-2-4.5-4.5 2.5 0 4.5 2 4.5 4.5zM13 16c2.5 0 4.5-2 4.5-4.5-2.5 0-4.5 2-4.5 4.5z"/>
+    </svg>
   );
 }
 
@@ -114,6 +123,13 @@ export default function App() {
         </div>
       </section>
 
+      {/* <section className="sec">
+        <div className="sec-itemps">
+          <h1>Beriverse Association</h1>
+          <p></p>
+        </div>
+      </section> */}
+
       <section className="sec black" id="impact">
         <div className="wrap">
           <h2>{t.figTitle}</h2>
@@ -135,6 +151,30 @@ export default function App() {
             {PARTNERS.map(({ name, logo }) => (
               <div className="partner" key={name}>
                 <img src={logo} alt={name} loading="lazy" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="sec refs" id="references">
+        <div className="wrap">
+          <div className="refs-head">
+            <span className="refs-label">{t.eventsLabel}</span>
+            <p>{t.eventsText}</p>
+          </div>
+          <div className="refs-photo">
+            <img src={EVENTS_PHOTO} alt="" loading="lazy" />
+          </div>
+          <div className="refs-grid">
+            {EVENTS.map((e) => (
+              <div className="ref-card" key={e.name}>
+                <Laurel />
+                <div className="ref-logo">
+                  <img src={e.logo} alt={e.name} loading="lazy" />
+                </div>
+                <small>{e.year}</small>
+                <strong>{e.title[lang]}</strong>
               </div>
             ))}
           </div>
